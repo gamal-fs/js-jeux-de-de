@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-image: url(image-fond.avif);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  color: #555;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.playzone {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 228, 196, 0.705);
+  box-shadow: 0px 10px 30px rgb(45, 45, 45);
+}
+
+.player {
+  width: 50%;
+  float: left;
+  height: 60vh;
+  padding: 100px;
+}
+
+.player-name {
+  text-align: center;
+  font-size: 300%;
+  position: relative;
+  color: #506056;
+}
+
+.player-score {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 300;
+  color: olivedrab;
+}
+
+.active {
+  background-color: #b9a8a856;
+}
+
+.active .player-name {
+  font-weight: 400;
+  text-shadow: 0px 2px 5px rgb(103, 107, 93)  ;
+}
+
+.active .player-box {
+  box-shadow: 0px 5px 30px rgba(124, 31, 31, 0.507);
+}
+
+.active .player-name::after {
+  content: "\2022";
+  color: #FB9940;
+  margin-left: 8px;
+  font-size: 30px;
+  position: absolute;
+  top: 12px;
+}
+
+.player-box {
+  background-color: #E08D49;
+  text-align: center;
+  width: 40%;
+  margin: 100px auto;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.player-box-score {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 100;
+}
+
+button {
+  position: absolute;
+  width: 400px;
+  background: none;
+  border: none;
+  margin: 10px;
+  font-size: 1.9rem;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-new {
+  top: 50px;
+}
+
+.btn-roll {
+  top: 350px;
+}
+
+.btn-hold {
+  top: 420px;
+}
+
+i {
+  margin: 0 15px;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 178px;
+  transform: translateX(-50%);
+  height: 100px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+img {
+  border-radius: 10px;
+  opacity: 0.75;
+}
+
+.winner {
+  background-color: #EB4D4D;
+}
+
+.winner .player-name {
+  font-weight: 600;
+  color: #EB4D4D
+}

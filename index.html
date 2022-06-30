@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeux de dés</title>
+  <script src="https://kit.fontawesome.com/2ea9e54e68.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- création de l'espace de jeux -->
+  <div class="playzone">
+    <!-- Zone joueur 1 -->
+    <div class="player player-one active">
+      <div class="player-name" id="playerOne">Player 1</div>
+      <div class="player-score" id="scoreOne">13</div>
+      <div class="player-box">
+        <div class="score-label">Score</div>
+        <div class="player-box-score" id="scoreBoxOne">43</div>
+      </div>
+    </div>
+    <!-- Zone jouer 2 -->
+    <div class="player player-two">
+      <div class="player-name" id="playerTwo">Player 2</div>
+      <div class="player-score" id="scoreTwo">45</div>
+      <div class="player-box">
+        <div class="player-label">Score</div>
+        <div class="player-box-score" id="scoreBoxTwo">34</div>
+      </div>
+    </div>
+
+    <button class="btn-new" id="new"><i class="fas fa-plus-circle"></i>New game</button>
+    <button class="btn-roll"><i class="fas fa-recycle" id="launch"></i>Roll dice</button>
+    <button class="btn-hold"><i class="fas fa-save" id="save"></i>Hold</button>
+
+    <img src="dice-4.png" alt="Dice" class="dice">
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
