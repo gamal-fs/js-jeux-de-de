@@ -55,7 +55,9 @@ body {
 
 .active .player-name {
   font-weight: 400;
-  text-shadow: 0px 2px 5px rgb(103, 107, 93)  ;
+  text-shadow: 0px 2px 5px rgb(103, 107, 93);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
 }
 
 .active .player-box {
@@ -65,7 +67,7 @@ body {
 .active .player-name::after {
   content: "\2022";
   color: #FB9940;
-  margin-left: 8px;
+  margin-left: 3px;
   font-size: 30px;
   position: absolute;
   top: 12px;
