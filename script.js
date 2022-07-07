@@ -61,13 +61,13 @@ function start() {
 
   // Demande du nom du premier joueur
   var playerOne = prompt('Nom du joueur un ?', '');
-  if(playerOne === '') {
+  if(playerOne === '' || playerOne == null) {
     playerOne = "Player 1";
   } 
 
   // Demande du nom du deuxième joueur 
   var playerTwo = prompt('Nom du joueur deux ?');
-  if(playerTwo === '') {
+  if(playerTwo === '' || playerTwo == null) {
     playerTwo = "Player 2";
   }
 
