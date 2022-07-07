@@ -57,7 +57,7 @@ body {
   font-weight: 400;
   text-shadow: 0px 2px 5px rgb(103, 107, 93);
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .active .player-box {
@@ -90,7 +90,7 @@ body {
 
 button {
   position: absolute;
-  width: 400px;
+  width: 215px;
   background: none;
   border: none;
   margin: 10px;
@@ -117,8 +117,8 @@ i {
   margin: 0 15px;
 }
 
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
+button:hover {font-weight: 800;}
+button:hover i { margin-right: 15px; }
 
 .dice {
   position: absolute;
