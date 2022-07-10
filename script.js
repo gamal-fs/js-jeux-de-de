@@ -27,7 +27,7 @@ document.getElementById('hold').addEventListener('click', function() {
     // Mise à jour du scolre
     document.getElementById('score-' + playerActive).textContent = scores[playerActive];
     // Joueur gagnant
-    if (scores[playerActive] >= 10) {
+    if (scores[playerActive] >= 100) {
       document.getElementById('player-' + playerActive).textContent = 'WINNER!';
       document.querySelector('.dice').style.display = 'none';
       document.querySelector('player-' + playerActive + '-box').classList.remove('active');
