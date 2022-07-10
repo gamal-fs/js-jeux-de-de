@@ -46,7 +46,7 @@ function nextPlayer() {
   document.getElementById('scoreBox-1').textContent = '0';
   document.querySelector('.player-0-box').classList.toggle('active');
   document.querySelector('.player-1-box').classList.toggle('active');
-  document.querySelector('.dice').style.display = 'none';
+  // document.querySelector('.dice').style.display = 'none';
 }
 
 document.getElementById('new').addEventListener('click', start);

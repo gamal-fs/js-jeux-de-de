@@ -26,6 +26,7 @@ body {
   transform: translate(-50%, -50%);
   background-color: rgba(255, 228, 196, 0.705);
   box-shadow: 0px 10px 30px rgb(45, 45, 45);
+  border-radius: 10px;
 }
 
 .player {
